@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "bow fighting",
+        "description": "",
+        "uuid": "231977df-8c1f-4182-8200-8ae9b081f323",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            70
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "75e62d39-aa30-41f2-9a83-a38a50424639",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "913cfc2a-b530-4a62-a3d0-d84d2dde86ec",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "metadata": {
+    "authors": [
+            "Jean majid"
+        ]
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0-beta"
+        }
+    ]
+}
