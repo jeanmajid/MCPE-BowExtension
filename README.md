@@ -1,12 +1,12 @@
 # MCPE-BowExtension
 MCPE-BowExtension is a Minecraft extension that enhances the bow and arrow gameplay. It introduces new types of bows, each with unique properties and effects. The extension is designed to work with the Minecraft Bedrock Edition.
 ## Features
-- Custom Bows: The extension introduces new types of bows, each with unique properties. The bow types are defined in bowTypes.js.
-- Bow Usage Events: The extension listens to bow usage events such as start and stop of bow usage. These events are handled in itemEvents.js.
-- Projectile Events: The extension also listens to projectile events such as when an arrow hits an entity or a block. These events are handled in projectileEvents.js.
-- Entity Events: The extension keeps track of the latest arrow entity and a map of all arrow entities in entityEvents.js.
-- Bow Registry: The extension maintains a registry of bow types. The default bow type is registered in 0-default.js.
-- Performance: The extension is designed to be efficient and optimized for performance. It uses a simple and lightweight methods to handle bow and arrow events with 0 runIntervals which does make it kinda look bad ingame but it works.
+- Custom Bows: The extension introduces new types of bows, each with unique properties.
+- Bow Usage Events: The extension listens to bow usage events such as start and stop of bow usage. These events are handled in [itemEvents.js](scripts/events/itemEvents.js).
+- Projectile Events: The extension also listens to projectile events such as when an arrow hits an entity or a block. These events are handled in [projectileEvents.js](scripts/events/projectileEvents.js).
+- Entity Events: The extension keeps track of the latest arrow entity and a map of all arrow entities in [entityEvents.js](scripts/events/entityEvents.js).
+- Bow Registry: The extension maintains a registry of bow types. The default bow type is registered in [0-default.js](scripts/registry/bows/0-default.js) and currently explodes on hit. Bow types also need to be updated in [bowTypes.js](scripts/constants/bowTypes.js) for developer convenience.
+- Performance: The extension is designed to be efficient and optimized for performance. It uses a simple and lightweight methods to handle bow and arrow events with 0 runIntervals which does inturn make it have no charge indicators, but that could be added later.
 ## Installation
 1. Clone this repository.
 2. Navigate to the Minecraft behavior packs directory.
@@ -40,4 +40,4 @@ Bows.register({
 Contributions are welcome. Please open an issue or submit a pull request if you would like to help improve MCPE-BowExtension. It's currently not really finished, it was just a test project to make my code structure better and now im not working on it anymore. But if you want to continue it, feel free to do so and also don't judge me I kinda rushed the code in some places.
 
 ## License
-MCPE-BowExtension is open-source software released under the MIT license. Please see the LICENSE file for details.
+MCPE-BowExtension is open-source software released under the MIT license. Please see the [LICENSE](LICENSE) for details.
